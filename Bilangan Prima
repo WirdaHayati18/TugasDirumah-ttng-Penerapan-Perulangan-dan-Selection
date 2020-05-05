@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+//Tugas Penerapan Perulangan dan Selection Wirda Hayati ETE10190122
+int main ( ) {
+	cout << "INI ADALAH BILANGAN PRIMA" << endl;
+	int angka_awal = 2;
+	int angka_akhir = 809;
+	
+	for (int i = angka_awal; i <= angka_akhir; i++)
+	{
+		int counter_prima = 0;
+		for (int j = 1; j <= i; j++)
+		{
+			if (i % j == 0)
+			{
+				counter_prima++;
+			}
+		}
+		if (counter_prima == 2)
+		{
+			cout << i << " adalah bilangan PRIMA " << endl;
+		}
+	}
+	return 0;
+}
